@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b50f8c3ea1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="hero">
+        <div class="container">
+            <nav>
+                <img src="logo-color.png" alt="logo" class="logo" width="20%" height="30%">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="index2.html" target="_blank">Login</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="WhatsApp Image 2023-08-29 at 12.25.45.jpg" alt="" id="img">
+                </ul>
+               
+            </nav>
+            <div class="header-text">
+                <p>WEB DESIGNER</p>
+                <h1>Hi , I'm <span>Saksham</span> Porwal<br>from India.</h1>
+            </div>
+           
+        </div>
+    </div>
+    <!-- 2nd page starts -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="WhatsApp Image 2023-09-27 at 22.04.52.jpg" alt="">
+                </div>
+                <div class="col2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Hello, I'm Saksham Porwal, a devoted tech enthusiast with a deep passion for coding and skill enhancement. As someone who finds joy in the intricacies of technology, I constantly immerse myself in coding to push my boundaries and stay at the forefront of innovation. My journey involves a relentless pursuit of knowledge and a commitment to refining my skills. Whether crafting elegant solutions or exploring new technologies, I thrive on the dynamic nature of the tech world. Eager to contribute and learn, I embrace the challenges that come with coding, viewing them as opportunities for continuous growth and improvement.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/Ux</span><br>designing the ui</li>
+                            <li><span>C language</span><br>basic data stuctures</li>
+                            <li><span>Interface</span><br>Website Interface</li>
+                            <li><span>Web development</span><br>Html,CSS,Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>CodSoft</span><br>Campus Ambassador</li>
+                            <li><span>Oracle</span><br>Certified in data management</li>
+                            <li><span>Hacktoberfest 2023</span><br>Successfully completed 4 pull requests and planted a tree.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Class 10th</span><br>passed with 94%</li>
+                            <li><span>Class 12th</span><br>passed with 88%</li>
+                            <li><span>Btech</span><br>Currently persuing</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -----------Services------- -->
+    <div id="services">
+
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>
+                    Web Design
+                </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minus quam praesentium, asperiores similique in quas, fuga nostrum repudiandae labore soluta aliquid amet recusandae ad doloremque? Soluta tenetur hic officia itaque neque.</p>
+
+            </div>
+            <div>
+            <h2>UI/UX DESIGN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iste quidem. Porro aperiam neque autem itaque repellendus placeat sapiente consectetur, libero quibusdam voluptatem corrupti deserunt reiciendis necessitatibus quae ipsa, dolore, temporibus laudantium?</p>
+        </div>
+        <div>
+            <h2>
+                Web Design
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minus quam praesentium, asperiores similique in quas, fuga nostrum repudiandae labore soluta aliquid amet recusandae ad doloremque? Soluta tenetur hic officia itaque neque.</p>
+
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- contact -->
+    <div class="container">
+    <div id="contact">
+                <div class="contact-left">
+
+                    <h1 class="c-l-h1">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> contact@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 123564546</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
+                    </div>
+                    <a href="resume.io.pdf" download class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script works -->
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add
+            ("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+    </body>
+    </html>
+    
